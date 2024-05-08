@@ -109,9 +109,3 @@ SELECT * FROM information_schema.table_constraints
     
 -- 2. DDL 문을 통해서 확인
 SHOW CREATE TABLE employees;
-
-
-
-
-
-
