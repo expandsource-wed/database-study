@@ -37,9 +37,5 @@ TRUNCATE TABLE employees;
 
 SELECT * FROM employees;	-- 테이블 내용 확인
 
-
-
-
-
-
+DROP DATABASE IF EXISTS drop_db;
 
