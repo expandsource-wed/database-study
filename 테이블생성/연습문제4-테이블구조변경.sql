@@ -89,7 +89,7 @@ ALTER TABLE projects
 	DROP CONSTRAINT projects_chk_1;
 
 -- 연습 문제 15: assignments 테이블에서 동일한 직원과 프로젝트 조합이 중복되지 않도록 하는 제약조건을 삭제하세요. (제약조건 이름 확인 필요)
--- 외래키 제약조건이 삭제가 전제되어야 함.
+-- 외래키 제약조건이 삭제가 전제 되어야 함.
 ALTER TABLE assignments
 	DROP CONSTRAINT assignments_ibfk_1;
 ALTER TABLE assignments
