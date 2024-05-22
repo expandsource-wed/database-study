@@ -63,3 +63,6 @@ DROP USER 'user1'@'localhost';
 DROP USER 'user2'@'localhost';
 DROP USER 'user3'@'localhost';
 DROP USER 'user4'@'localhost';
+
+-- DCL 권한 확인하기
+SHOW GRANTS FOR 'ceo'@'%';
