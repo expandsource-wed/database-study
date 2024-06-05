@@ -85,14 +85,14 @@ HAVING count(*) >= 5;
 -- 부서별 월급 합계가 10000 달러 이상인 부서 조회
 SELECT deptno, sum(sal) FROM emp 
 GROUP BY deptno
-HAVING sum(sal) > 10000;
+HAVING sum(sal) >= 10000;
 
 -- WHERE 절은 데이터가 그룹화되기 전에 조건을 적용 (모든 개별 행)
 -- HAVING 절은 데이터가 그룹화된 결과에 조건을 적용 (그룹별 단일 행)
 SELECT deptno, sum(sal) FROM emp
 WHERE sal > 1500		-- 원래 테이블의 각 행에 조건 적용
 GROUP BY deptno
-HAVING sum(sal) > 5000; -- 그룹별 결과셋에 조건 적용
+HAVING sum(sal) >= 5000; -- 그룹별 결과셋에 조건 적용
 
 
 -- ROLL UP : 분류별 소합계 및 총합, 요약 정보를 얻을 때
